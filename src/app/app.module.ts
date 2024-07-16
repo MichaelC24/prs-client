@@ -9,6 +9,10 @@ import { UserListComponent } from './prs/user/user-list/user-list.component';
 import { MenuComponent } from './prs/menu/menu/menu.component';
 import { HomeComponent } from './prs/misc/home/home.component';
 import { AboutComponent } from './prs/misc/about/about.component';
+import { UserGetComponent } from './prs/user/user-view/user-view.component';
+import UserChangeComponent from './prs/user/user-change/user-change.component';
+import { UserCreateComponent } from './prs/user/user-create/user-create.component';
+import { UserLoginComponent } from './prs/user/user-login/user-login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { AboutComponent } from './prs/misc/about/about.component';
     UserListComponent,
     MenuComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    UserGetComponent,
+    UserChangeComponent,
+    UserCreateComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule, FormsModule,
