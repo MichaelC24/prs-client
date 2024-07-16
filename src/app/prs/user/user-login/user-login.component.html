@@ -1,1 +1,24 @@
-<p>user-login works!</p>
+<div id ="main">
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="2" class="fw-bold fst-italic"></td> <!--makes sure the number of columns is the same for all rows in this case its saying there will be 2 columns in every row.-->
+            </tr>
+            <tr>
+                <th>UserName</th>
+                <td><input [(ngModel)]="username" autocomplete="username"/></td>
+            </tr>
+            <tr>
+                <th>password</th>
+                <td><input [(ngModel)]="password" type="password" autocomplete="current-password"/>  </td>
+
+            </tr>
+            <tr>
+                <td colspan="2" class="text-danger fw-bold">{{message}}&nbsp</td> <!--$nbsp means non breakable line-->
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button (click)="login()" class="btn btn-primary">Login</button>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div>
+    <app-menu />
+    <h3>Vendor List</h3>
+
+    <main>
+        <a routerLink="/vendor/create">Create New</a>
+        <table class="table table-sm table-striped">
+            <thead>
+                <tr>
+                    <th> Id </th> 
+                    <th> LastName </th> 
+                    <th> FirstName </th>
+                    <th> UserName </th> 
+                    <th> Phone </th>
+                    <th> Email </th>
+                    <th> Reviewer? </th>
+                    <th> Admin? </th>
+                    <th> Actions </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let v of vendors">
+                    <td>{{ v.id }} </td>
+                    <td>{{ v.code }}</td>
+                    <td>{{ v.name }}</td>
+                    <td>{{ v.address }}</td>
+                    <td>{{ v.city }}</td>
+                    <td>{{ v.state }}</td>
+                    <td>{{ v.zip }}</td>
+                    <td>{{ v.phone }}</td>
+                    <td>{{ v.email }}</td>
+                    <td>
+                        <a routerLink= "/vendor/view/{{v.id}}">View</a>
+                            <span>  | </span>
+                        <a routerLink="/vendor/change/{{v.id}}">Change</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</div>

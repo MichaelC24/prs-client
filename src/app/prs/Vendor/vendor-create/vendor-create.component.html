@@ -1,0 +1,62 @@
+<div>
+    <app-menu />
+    <h3>Vendor View</h3>
+
+    <main> 
+        <table class = "table table-sm"> <!--table table-sm makes the data appear closer togethter-->
+            <tbody>
+                <tr>
+                    <td>Id</td>
+                    <td><input [(ngModel)]="vendor.id" disabled /></td> <!--input only has an opening tag no closing tag-->
+
+                </tr>
+                <tr>
+                    <td>Code</td>
+                    <td><input [(ngModel)]="vendor.code" [disabled]="isReadonly" /></td> <!--if readonly is true then disabled takes affect and doesnt allow input-->
+                    
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input [(ngModel)]="vendor.name" [disabled]="isReadonly" /></td>
+                    
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input [(ngModel)]="vendor.address" [disabled]="isReadonly" /></td>
+                    
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td><input [(ngModel)]="vendor.city" [disabled]="isReadonly" /></td>
+                    
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td><input [(ngModel)]="vendor.state" [disabled]="isReadonly" /></td>
+                    
+                </tr>
+                <tr>
+                    <td>Zip</td>
+                    <td><input [(ngModel)]="vendor.zip" [disabled]="isReadonly" /></td>
+                    
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><input [(ngModel)]="vendor.phone" [disabled]="isReadonly" /></td>
+                    
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input [(ngModel)]="vendor.email" [disabled]="isReadonly" /></td>
+                    
+                </tr>
+            </tbody>
+
+        </table>
+        <div>
+            <button (click)="save()" class="btn btn-primary">Create</button> <!--when they click the button run the method then the class= is styling the button-->
+            
+        </div>
+    </main>
+</div>
+

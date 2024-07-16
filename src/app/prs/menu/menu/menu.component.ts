@@ -11,6 +11,8 @@ export class MenuComponent {
   menus = [
     new Menu("Home", "/home"),
     new Menu("Users","/user/list"),
-    new Menu("About", "/about")
+    new Menu("Vendors","/vendor/list"),
+    new Menu("About", "/about"),
+    new Menu("Login", "user/login")
   ]
 }
