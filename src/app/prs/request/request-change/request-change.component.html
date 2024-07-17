@@ -1,0 +1,48 @@
+<div>
+    <app-menu />
+    <h3>Request Change</h3>
+
+    <main> 
+        <table class = "table table-sm"> <!--table table-sm makes the data appear closer togethter-->
+            <tbody>
+                <tr>
+                    <td>Id</td>
+                    <td><input [(ngModel)]="request.id" disabled /></td> <!--input only has an opening tag no closing tag-->
+
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td><input [(ngModel)]="request.description"  /></td> <!--if readonly is true then disabled takes affect and doesnt allow input-->
+                    
+                </tr>
+                <tr>
+                    <td>Justification</td>
+                    <td><input [(ngModel)]="request.justification" [disabled]="isReadonly" /></td>
+                    
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td><input [(ngModel)]="request.status" disabled /></td>
+                    
+                </tr>
+                <tr>
+                    <input *ngIf request.rejectionReason class="text-danger fw-bold">
+                    <td>Rejection Reason</td>
+                    <td><input [(ngModel)]="request.rejectionReason" [disabled]="isReadonly" /></td>
+                </tr>
+                <tr>
+                    <td>UserName</td>
+                    <td><input [ngModel]="request.user?.username" disabled /></td> <!--without the () around the ngmodel it means you can change waht that is showing in this case username-->
+                    
+                </tr>
+                           </tbody>
+
+        </table>
+        <div>
+           
+            <button (click) = "save()" class="btn btn-primary">Verify Change</button>
+            
+        </div>
+    </main>
+</div>
+

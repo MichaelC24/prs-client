@@ -12,7 +12,11 @@ export class MenuComponent {
     new Menu("Home", "/home"),
     new Menu("Users","/user/list"),
     new Menu("Vendors","/vendor/list"),
+    new Menu("Requests", "/request/list"),
+    
     new Menu("About", "/about"),
-    new Menu("Login", "user/login")
+    new Menu("Login", "user/login"),
+    new Menu("Products", "/product/list")
+    
   ]
 }

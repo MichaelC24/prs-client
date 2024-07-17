@@ -17,6 +17,17 @@ import { VendorListComponent } from './prs/Vendor/vendor-list/vendor-list.compon
 import { VendorViewComponent } from './prs/Vendor/vendor-view/vendor-view.component';
 import { VendorCreateComponent } from './prs/Vendor/vendor-create/vendor-create.component';
 import { VendorChangeComponent } from './prs/Vendor/vendor-change/vendor-change.component';
+import { ProductListComponent } from './prs/product/product-list/product-list.component';
+import { ProductViewComponent } from './prs/product/product-view/product-view.component';
+import { ProductCreateComponent } from './prs/product/product-create/product-create.component';
+import { ProductChangeComponent } from './prs/product/product-change/product-change.component';
+import { RequestListComponent } from './prs/request/request-list/request-list.component';
+import { RequestChangeComponent } from './prs/request/request-change/request-change.component';
+import { RequestCreateComponent } from './prs/request/request-create/request-create.component';
+import { RequestViewComponent } from './prs/request/request-view/request-view.component';
+import { RequestRemoveComponent } from './prs/request/request-remove/request-remove.component';
+import { ProductRemoveComponent } from './prs/product/product-remove/product-remove.component';
+import { RequestReviewComponent } from './prs/request/request-review/request-review.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +43,18 @@ import { VendorChangeComponent } from './prs/Vendor/vendor-change/vendor-change.
     VendorListComponent,
     VendorViewComponent,
     VendorCreateComponent,
-    VendorChangeComponent
+    VendorChangeComponent,
+    ProductListComponent,
+    ProductViewComponent,
+    ProductCreateComponent,
+    ProductChangeComponent,
+    RequestListComponent,
+    RequestChangeComponent,
+    RequestCreateComponent,
+    RequestViewComponent,
+    RequestRemoveComponent,
+    ProductRemoveComponent,
+    RequestReviewComponent
   ],
   imports: [
     BrowserModule, FormsModule,

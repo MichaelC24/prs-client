@@ -11,6 +11,13 @@ import { VendorListComponent } from './prs/Vendor/vendor-list/vendor-list.compon
 import { VendorViewComponent } from './prs/Vendor/vendor-view/vendor-view.component';
 import { VendorCreateComponent } from './prs/Vendor/vendor-create/vendor-create.component';
 import { VendorChangeComponent } from './prs/Vendor/vendor-change/vendor-change.component';
+import { Vendor } from './prs/Vendor/vendor.class';
+import { ProductListComponent } from './prs/product/product-list/product-list.component';
+import { ProductCreateComponent } from './prs/product/product-create/product-create.component';
+import { RequestListComponent } from './prs/request/request-list/request-list.component';
+import { RequestViewComponent } from './prs/request/request-view/request-view.component';
+import { RequestChangeComponent } from './prs/request/request-change/request-change.component';
+import { RequestCreateComponent } from './prs/request/request-create/request-create.component';
 
 const routes: Routes = [
   {path: "", redirectTo: "/home", pathMatch: "full"},// route that excutes when you first start your application and its only done once
@@ -22,9 +29,15 @@ const routes: Routes = [
   {path: "user/create", component: UserCreateComponent},
   {path: "user/list/user/login",component: UserLoginComponent},
   {path: "vendor/list", component: VendorListComponent},
-  {path:"vendor/view/:id", component:VendorViewComponent},
+  {path: "vendor/view/:id", component:VendorViewComponent},
   {path: "vendor/create", component:VendorCreateComponent},
-  {path: "vendor/change/:id", component:VendorChangeComponent}
+  {path: "vendor/change/:id", component:VendorChangeComponent},
+  {path: "product/list", component: ProductListComponent},
+  {path: "product/create", component: ProductCreateComponent},
+  {path: "request/list", component: RequestListComponent},
+  {path: "request/view/:id", component: RequestViewComponent},
+  {path: "request/change/:id",component: RequestChangeComponent},
+  {path: "request/create", component: RequestCreateComponent}
 ];
 
 @NgModule({
